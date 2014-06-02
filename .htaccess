@@ -1,0 +1,8 @@
+#Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(js|ico|gif|jpe?g|png|css|swf|xml|html|eot|ttf|woff|svg)$ index.php

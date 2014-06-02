@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'OCRAExtended';
+	src: url('fonts/ocraext/OCRAExtended.eot?') format('eot'), 
+	     url('fonts/ocraext/OCRAExtended.woff') format('woff'), 
+	     url('fonts/ocraext/OCRAExtended.ttf')  format('truetype'),
+	     url('fonts/ocraext/OCRAExtended.svg#OCRAExtended') format('svg');
+}
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url('fonts/opensans-semibold/OpenSans-Semibold.eot?') format('eot'), 
+	     url('fonts/opensans-semibold/OpenSans-Semibold.woff') format('woff'), 
+	     url('fonts/opensans-semibold/OpenSans-Semibold.ttf')  format('truetype'),
+	     url('fonts/opensans-semibold/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+}
+@font-face {
+	font-family: 'FreestyleScript-Regular';
+	src: url('fonts/freestyle/FreestyleScript-Regular.eot?') format('eot'), 
+	     url('fonts/freestyle/FreestyleScript-Regular.woff') format('woff'), 
+	     url('fonts/freestyle/FreestyleScript-Regular.ttf')  format('truetype'),
+	     url('fonts/freestyle/FreestyleScript-Regular.svg#FreestyleScript-Regular') format('svg');
+}
+@font-face {
+	font-family: 'MICREncoding';
+	src: url('fonts/micrencoding/MICREncoding.eot?') format('eot'), 
+	     url('fonts/micrencoding/MICREncoding.woff') format('woff'), 
+	     url('fonts/micrencoding/MICREncoding.ttf')  format('truetype'),
+	     url('fonts/micrencoding/MICREncoding.svg#MICREncoding') format('svg');
+}
+.visa-select{display:block;width:1133px;height:378px;background:url(../images/payments/visa.png) no-repeat 0 0;position:relative;margin:27px auto;}
+.visa-select input{border:none;background:#fff;font-family:'OCRAExtended';font-weight:normal;display:inline-block;position:absolute;text-transform:uppercase;color:#000;}
+.visa-card-num{width:415px;height:28px;top:176px;left:66px;font-size:21px;}
+.visa-date{width:69px;height:19px;top:258px;left:67px;font-size:18px;}
+.visa-zipcode{width:89px;height:19px;top:258px;left:245px;font-size:18px;}
+.visa-cardholder{width:272px;height:22px;top:317px;left:67px;font-size:18px;}
+.visa-sign{width:72px;height:20px;top:137px;right:39px;font-size:18px;text-align:center;}
+.master-select{display:none;width:1133px;height:378px;background:url(../images/payments/master.png) no-repeat 0 0;position:relative;margin:27px auto;}
+.master-select input{border:none;background:#fff;font-family:'OCRAExtended';font-weight:normal;display:inline-block;position:absolute;text-transform:uppercase;color:#000;}
+.amex-select{display:none;width:586px;height:377px;background:url(../images/payments/amex.png) no-repeat 0 0;position:relative;margin:27px auto;}
+.amex-select input{border:none;background:#fff;font-family:'OCRAExtended';font-weight:normal;display:inline-block;position:absolute;text-transform:uppercase;color:#000;}
+.amex-card-num{width:440px;height:23px;top:209px;left:72px;font-size:21px;}
+.amex-date{width:72px;height:19px;top:267px;left:72px;font-size:18px;}
+.amex-zipcode{width:80px;height:19px;top:266px;right:72px;font-size:17px;}
+.amex-cardholder{width:338px;height:22px;top:314px;left:72px;font-size:18px;}
+.amex-sign{width:80px;height:20px;top:156px;right:73px;font-size:18px;}
+.check-select{display:none;width:960px;height:352px;background:url(../images/payments/check.png) no-repeat 0 0;position:relative;margin:27px auto;}
+.check-select input{border:none;font-weight:normal;display:inline-block;position:absolute;color:#000;}
+.check-title{width:145px;height:18px;background:none;font-family:'OpenSans-Semibold';left:152px;top:29px;font-size:15px;}
+.check-road{width:145px;height:18px;background:none;font-family:'OpenSans-Semibold';left:152px;top:61px;font-size:15px;}
+.check-city{width:145px;height:18px;background:none;font-family:'OpenSans-Semibold';left:152px;top:90px;font-size:15px;}
+.check-invoice-id{width:190px;height:29px;background:none;font-family:'OpenSans-Semibold';left:78px;top:214px;font-size:19px;text-align:center;}
+.check-number{width:100px;height:26px;background:none;font-family:'OpenSans-Semibold';right:178px;top:28px;font-size:24px;text-align:center;}
+.check-date{width:149px;height:27px;background:none;font-family:'FreestyleScript-Regular';right:324px;top:69px;font-size:29px;text-align:center;}
+.check-orderof{width:508px;height:43px;background:none;font-family:'FreestyleScript-Regular';left:109px;top:114px;font-size:33px;}
+.check-total-text{width:615px;height:43px;background:none;font-family:'FreestyleScript-Regular';left:28px;top:148px;font-size:33px;text-align:center;}
+.check-total-number{width:131px;height:34px;background:none;font-family:'FreestyleScript-Regular';right:179px;top:112px;font-size:33px;text-align:center;}
+.check-sigature{width:336px;height:41px;background:none;font-family:'FreestyleScript-Regular';right:179px;top:202px;font-size:33px;text-align:center;color:#000;position:absolute;}
+.check-routing-name{width:178px;height:21px;background:none;font-family:'MICREncoding';font-size:27px;bottom:71px;left:34px;text-align:center;text-transform:uppercase;}
+.check-acount-number{width:178px;height:21px;background:none;font-family:'MICREncoding';font-size:27px;bottom:71px;left:238px;text-align:center;text-transform:uppercase;}
+.check-check-number{width:82px;height:21px;background:none;font-family:'MICREncoding';font-size:27px;bottom:71px;left:441px;text-align:center;text-transform:uppercase;}
+.cash-select{display:none;width:833px;height:36px;background:url(../images/payments/cash.png) no-repeat 0 0;position:relative;margin:27px auto;padding-top:383px;}
+.cash-select input{display:block;width:379px;height:36px;position:relative;bottom:0;margin:0 auto;border:none;border-radius:3px;box-shadow:0 2px 5px #000 inset;-webkit-box-shadow:0 2px 5px #000 inset;-moz-box-shadow:0 2px 5px #000 inset;-o-box-shadow:0 2px 5px #000 inset;color:#000;text-align:center;font-size:18px;}
