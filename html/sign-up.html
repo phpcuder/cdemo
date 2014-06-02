@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/payment.css"><!-- IMPORTANT: Only load it in payment page -->
+	<link rel="stylesheet" href="css/validationEngine.jquery.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.validationEngine.js"></script>
+	<script type="text/javascript" src="js/jquery.validationEngine-en.js"></script>
+	<script type="text/javascript" src="js/loopslider.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper div-clear fl">
+		<div class="inner-wrapper wrap-payment">
+			<div class="the-show div-clear fl">
+				<form action="" method="post" enctype="multipart/form-data" id="submit-form">
+					<div class="sign-up-progress div-clear fl">
+						<div class="form-step form-step-1 div-inline fl">
+							<div class="inner-wrapper">
+								<h2 class="page-title div-clear fl"><span class="sprited title-maps">Maps</span></h2>
+								<div class="div-clear fl main-page">
+									<div class="maps-intro div-inline fl">
+										<p>CouponDoors is distributed to select neighborhoods in New York every season.</p>
+										<label class="div-clear">
+											<span>Enter your zip codes (Ex: 90210 90211 90212)</span>
+											<input type="text" name="" id="zip-selected" value="" placeholder="Zipcode(s)">
+										</label>
+										<ul class="list-check">
+											<li>
+												<input type="radio" class="custome-check" value="90210">
+												Manhattan, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" value="90211">
+												Long Island, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" name="" value="90212">
+												Bay Ridge, Brooklyn, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" name="" value="90213">
+												Marine Park, Brooklyn, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" name="" value="90214">
+												Midwood, Brooklyn, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" name="" value="90215">
+												Fresh Meadowns, Brooklyn, NY
+											</li>
+											<li>
+												<input type="radio" class="custome-check" name="" value="90216">
+												Whitestone, Queens, NY
+											</li>
+										</ul>
+									</div>
+									<div class="show-map div-inline fr">
+										<div id="map_canvas" style="width:488px;height:479px;"></div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /form-step-1 -->
+						<div class="form-step form-step-2 div-inline fl" style="opacity:0;">
+							<div class="inner-wrapper">
+								<h2 class="page-title div-clear fl"><span class="sprited title-prices">Prices</span></h2>
+								<div class="div-clear fl main-page">
+									<div class="price-options div-inline fl">
+										<ul class="list-options">
+											<li class="list-items">
+												<h4>
+													<input type="checkbox" class="custome-check change-price" name="price" value="small" checked>
+													Small
+												</h4>
+												<ol>
+													<li><strong>Size:</strong> 3.0" H x 4.0" W</li>
+													<li><strong>Distribution:</strong> 10,000 Homes</li>
+													<li><strong>Price:</strong> $295</li>
+													<li><strong>Deal:</strong> 1 Deal Allowed</li>
+												</ol>
+											</li>
+											<li class="list-items">
+												<h4>
+													<input type="checkbox" class="custome-check change-price" name="price" value="large">
+													Large
+												</h4>
+												<ol>
+													<li><strong>Size:</strong> 6.0" H x 4.0" W</li>
+													<li><strong>Distribution:</strong> 10,000 Homes</li>
+													<li><strong>Price:</strong> $595</li>
+													<li><strong>Deal:</strong> 2 Deal Allowed</li>
+												</ol>
+											</li>
+										</ul>
+									</div>
+									<div class="price-option-preview div-inline fr">
+										<center><a href="" title="" class="zoom"><strong>Small</strong> <span class="sprited"></span></a></center>
+										<img src="images/small.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div><!-- /form-step-2 -->
+						<div class="form-step form-step-3 div-inline fl" style="opacity:0;">
+							<div class="inner-wrapper">
+								<div class="div-clear calender fl">
+									<div class="calender-options div-clear fl">
+										<h2 class="page-title div-clear fl"><span class="sprited title-calender">Calender</span></h2>
+										<p>CouponDoors is distributed every season, four times a year.</p>
+										<ul class="list-seasons">
+											<li>
+												<input type="checkbox" class="custome-check" value="spring" checked>
+												Spring
+											</li>
+											<li>
+												<input type="checkbox" class="custome-check" value="summer">
+												Summer
+											</li>
+											<li>
+												<input type="checkbox" class="custome-check" value="fall">
+												Fall
+											</li>
+											<li>
+												<input type="checkbox" class="custome-check" value="winter">
+												Winter
+											</li>
+										</ul>
+										<div class="show-calendar">
+											<a href="go:spring;" title="" class="spring">Spring</a>
+											<a href="go:summer;" title="" class="summer">Summer</a>
+											<a href="go:fall;" title="" class="fall">Fall</a>
+											<a href="go:winter;" title="" class="winter">Winter</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /form-step-3 -->
+						<div class="form-step form-step-4 div-inline fl" style="opacity:0;">
+							<div class="inner-wrapper">
+								<h2 class="page-title div-clear fl"><span class="sprited title-design">Design</span></h2>
+								<div class="div-clear fl main-page">
+									<div class="div-clear fl">
+										<div class="selecttype" status="close">
+											<div class="placeholder">Select Business Type</div>
+											<a href="" title="" status="close" class="select-arrow sprited"></a>
+											<ul>
+												<li value="1"><span>Business Type 1</span></li>
+												<li value="2"><span>Business Type 2</span></li>
+												<li value="3"><span>Business Type 3</span></li>
+												<li value="4"><span>Business Type 4</span></li>
+												<li value="5"><span>Business Type 5</span></li>
+												<li value="6"><span>Business Type 6</span></li>
+											</ul>
+											<input type="hidden" name="business_type" value="">
+										</div>
+									</div>
+									<div class="business-slide div-clear fl">
+										<div class="show-cat-image" type="1" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+											<a href="" title="" class=""><img src="images/cats/cat1.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat2.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat3.png" width="357" height="245" alt=""></a>
+										</div>
+										<div class="show-cat-image" type="2" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+											<a href="" title="" class=""><img src="images/cats/cat2.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat1.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat3.png" width="357" height="245" alt=""></a>
+										</div>
+										<div class="show-cat-image" type="3" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+											<a href="" title="" class=""><img src="images/cats/cat1.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat2.png" width="357" height="245" alt=""></a>
+											<a href="" title="" class=""><img src="images/cats/cat3.png" width="357" height="245" alt=""></a>
+										</div>
+									</div>
+									<div class="div-clear business-form fl">
+										<div class="haft-page div-inline fl">
+											<ul>
+												<li><input type="text" name="" value="" placeholder="Name of Business"></li>
+												<li><input type="text" name="" value="" placeholder="Contact Person"></li>
+												<li><input type="text" name="" value="" placeholder="Address"></li>
+												<li><input type="text" name="" value="" placeholder="Email"></li>
+												<li><input type="text" name="" value="" placeholder="Website"></li>
+												<li>
+													<span class="div-inline fl haft-four"><input type="text" name="" value="" placeholder="Phone"></span>
+													<span class="div-inline fr haft-four"><input type="text" name="" value="" placeholder="Mobile"></span>
+												</li>
+												<li><input type="text" name="" value="" placeholder="Sales Agent"></li>
+											</ul>
+										</div>
+										<div class="haft-page div-inline fr">
+											<ul>
+												<li class="upload">
+													<input type="text" name="" class="input-select" inputtype="logo" placeholder="Upload Logo" disabled="disabled">
+													<div class="browse sprited" inputtype="logo" title=""></div>
+													<input type="file" class="typefile" name="logo" value="">
+													<a href="" class="capture sprited" title=""></a>
+												</li>
+												<li class="upload">
+													<input type="text" name="" class="input-select" inputtype="images[]" placeholder="Upload images" disabled="disabled">
+													<div class="browse sprited" inputtype="images[]" title=""></div>
+													<input type="file" class="typefile" name="images[]" multiple value="">
+													<a href="" class="capture sprited" title=""></a>
+												</li>
+												<li><input type="text" name="" value="" placeholder="Do you have any Headlines ?"></li>
+												<li><input type="text" name="" value="" placeholder="What is your coupon deal ?"></li>
+												<li><input type="text" name="" value="" placeholder="Do you have any disclaimers ?"></li>
+												<li><input type="text" name="" value="" placeholder="Any additional info to include on coupon ?"></li>
+												<li><input type="text" name="" value="" placeholder="Any additional info to include on coupon ?"></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /form-step-4 -->
+						<div class="form-step form-step-5 div-inline fl" style="opacity:0;">
+							<div class="page">
+								<div class="address-block">
+									9 Bellingham Lane Great Neck, NY 11023
+								</div>
+								<div class="invoice-block">
+									<h4>INVOICE</h4>
+									<ul>
+										<li><strong>Invoice # :</strong> 4954</li>
+										<li><strong>Invoice Date :</strong> 01/02/2014</li>
+										<li><strong>Total Due :</strong> $345.00</li>
+										<li><strong>Due Date :</strong> On Receipt</li>
+									</ul>
+								</div>
+								<ul class="custome-block">
+									<li>Royal Optix</li>
+									<li>7516 3rd Ave</li>
+									<li>Brooklyn NY 11209</li>
+								</ul>
+								<table class="table-title">
+									<tr>
+										<th>QTY</th>
+										<th>PRODUCT</th>
+										<th>PRICE</th>
+										<th style="text-align:right;">TOTAL</th>
+									</tr>
+									<tr>
+										<td>1.00</td>
+										<td>Small Coupon (3.0"H x 4.0"W)</td>
+										<td>$495.00</td>
+										<td style="text-align:right;">$495.00</td>
+									</tr>
+								</table>
+								<p class="content-page">If balance is not paid CouponDoors, Inc. can place account into collection. In the event Coupondoors places this agreement in the hands of a collection agency, Client has agreed to reimburse Coupondoors for all collection fees and expenses and attorney fees incurred. In Addition, Client has previously agreed to pay a collection fee of $200.00 plus interest at the rate of 12% upon the balance due from the date of default. The Client has agreed not to cancel this contract or otherwise be responsible balance plus for a $200.00 cancellation fee plus interest at the annual rate of twelve percent upon the balance due under this agreement from the date of default. All deposits are refundable only inthe event that not enough participants have joined our campaign. Any outstanding balance must be satisfied before the product is printed.</p>
+							</div>	
+						</div><!-- /form-step-5 -->
+						<div class="form-step form-step-6 div-inline fl" style="opacity:0;">
+							<h2 class="page-title div-clear fl"><span class="sprited title-payment">Payment</span></h2>
+							<div class="div-clear fl main-page">
+								<ul class="payment-method">
+									<li class="pay-visa">
+										<span class="sprited">Visa</span>
+										<input type="checkbox" class="custome-check" name="payment" value="visa" checked>Visa
+									</li>
+									<li class="pay-master">
+										<span class="sprited">MasterCard</span>
+										<input type="checkbox" class="custome-check" name="payment" value="master">MasterCard
+									</li>
+									<li class="pay-aex">
+										<span class="sprited">American Express</span>
+										<input type="checkbox" class="custome-check" name="payment" value="amex">American Express
+									</li>
+									<li class="pay-paypal">
+										<span class="sprited">Paypal</span>
+										<input type="checkbox" class="custome-check" name="payment" value="paypal">Paypal
+									</li>
+									<li class="pay-check">
+										<span class="sprited">Check</span>
+										<input type="checkbox" class="custome-check" name="payment" value="check">Check
+									</li>
+									<li class="pay-cash">
+										<span class="sprited">Cash</span>
+										<input type="checkbox" class="custome-check" name="payment" value="cash">Cash
+									</li>
+								</ul>
+								<div class="payment-selected div-clear fl">
+									<div class="pay-methods visa-select">
+										<input type="text" name="" class="visa-card-num" value="" placeholder="CARD NUMBER">
+										<input type="text" name="" class="visa-date" value="" placeholder="MM/YY">
+										<input type="text" name="" class="visa-zipcode" value="" placeholder="ZIP CODE">
+										<input type="text" name="" class="visa-cardholder" value="" placeholder="CARDHOLDER NAME">
+										<input type="text" name="" class="visa-sign" maxlength="4" value="" placeholder="CVV2">
+									</div>
+									<div class="pay-methods master-select">
+										<input type="text" name="" class="visa-card-num" value="" placeholder="CARD NUMBER">
+										<input type="text" name="" class="visa-date" value="" placeholder="MM/YY">
+										<input type="text" name="" class="visa-zipcode" value="" placeholder="ZIP CODE">
+										<input type="text" name="" class="visa-cardholder" value="" placeholder="CARDHOLDER NAME">
+										<input type="text" name="" class="visa-sign" maxlength="4" value="" placeholder="CVV2">
+									</div>
+									<div class="pay-methods amex-select">
+										<input type="text" name="" class="amex-card-num" value="" placeholder="CARD NUMBER">
+										<input type="text" name="" class="amex-date" value="" placeholder="MM/YY">
+										<input type="text" name="" class="amex-zipcode" value="" placeholder="ZIP CODE">
+										<input type="text" name="" class="amex-cardholder" value="" placeholder="CARDHOLDER NAME">
+										<input type="text" name="" class="amex-sign" maxlength="4" value="" placeholder="CVV2">
+									</div>
+									<div class="pay-methods check-select">
+										<input type="text" name="" class="check-title" value="Royal Optix" placeholder="">
+										<input type="text" name="" class="check-road" value="7516 3rd Ave" placeholder="">
+										<input type="text" name="" class="check-city" value="Brooklyn NY 11209" placeholder="">
+										<input type="text" name="" class="check-date" value="05 /26 /2014" placeholder="MM /DD /YYYY">
+										<input type="text" name="" class="check-number" value="2563" placeholder="">
+										<input type="text" name="" class="check-orderof" value="CouponDoors, Inc" placeholder="">
+										<input type="text" name="" class="check-total-text" value="Two Hundred Ninety Five Only" placeholder="">
+										<input type="text" name="" class="check-total-number" value="$295.00" placeholder="">
+										<input type="text" name="" class="check-invoice-id" value="Invoice # : 4954" placeholder="">
+										<div class="check-sigature">Signature</div>
+										<input type="text" name="" class="check-routing-name" value="A8675309000A" placeholder="">
+										<input type="text" name="" class="check-acount-number" value="c9166526775c" placeholder="">
+										<input type="text" name="" class="check-check-number" value="2563c" placeholder="">
+									</div>
+									<div class="pay-methods cash-select">
+										<input type="text" name="" value="" placeholder="">
+									</div>
+								</div>
+							</div>
+						</div><!-- /form-step-6 -->
+						<div class="form-step form-step-7 div-inline fl" style="opacity:0;">
+							<div class="show-invoice">
+								<div class="div-clear invoice-pager">
+									<div class="iv-header div-clear fl"></div>
+									<div class="iv-content div-clear fl">
+										<div class="in-content">
+											<div class="in-head div-clear">
+												<h2>CouponDoors</h2>
+												<p>19 Bellingham Lane</p>
+												<p>Great Neck, NY 11023</p>
+											</div>
+											<div class="in-ctn div-clear">
+												<table class="table-1">
+													<tr>
+														<td>08-11-2014</td>
+														<td>17:12</td>
+														<td>0196-2020811-020</td>
+														<td>17:12</td>
+													</tr>
+												</table>
+												<table class="table-2">
+													<tr>
+														<td>Small Coupon (3.0"H x 4.0"W)</td>
+														<td>(x 1)</td>
+														<td>495.00</td>
+													</tr>
+												</table>
+												<table class="table-3">
+													<tr>
+														<td>Merchandise</td>
+														<td class="td-right">$ 495.00</td>
+													</tr>
+													<tr>
+														<td>Total</td>
+														<td class="td-right">$ 495.00</td>
+													</tr>
+													<tr>
+														<td>Pmt - Cash</td>
+														<td class="td-right">$ 495.00</td>
+													</tr>
+													<tr>
+														<td>Chg - Cash</td>
+														<td class="td-right">$ 495.00</td>
+													</tr>
+												</table>
+											</div>
+											<div class="in-foot div-clear">
+												<h3>CUSTOMER RECEIPT</h3>
+												<p>*A recept is required for all Problems.*</p>
+											</div>
+										</div>
+									</div>
+									<div class="iv-footer div-clear fl"></div>
+								</div>
+							</div>
+						</div><!-- /form-step-7 -->
+					</div>
+				</form>
+			</div>
+			<div class="sign-up-step fl">
+				<a href="javasctipt:void();" title="" class="btn-step step-back ok-step-back">Back</a>
+				<span class="btn-step step-progress step-1">Step progress</span>
+				<a href="javasctipt:void();" title="" class="btn-step step-next ok-step-next">
+					<div class="next-error"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-menu div-clear fl">
+		<ul>
+			<li><a href="home.html" title="Home">Home</a></li>
+			<li><a href="maps.html" title="Maps">Maps</a></li>
+			<li><a href="prices.html" title="Prices">Prices</a></li>
+			<li><a href="calender.html" title="Calender">Calender</a></li>
+			<li><a href="contact.html" title="Contact">Contact</a></li>
+		</ul>
+	</div>
+</body>
+</html>
