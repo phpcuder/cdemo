@@ -8,8 +8,7 @@
 
 <div class="inner-wrapper wrap-payment">
     <div class="the-show div-clear fl">
-        <form action="<?php echo Yii::app()->createUrl('site/signUp'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
-            <input type="hidden" name="form_step" value="<?php echo $formStep; ?>" />
+        <form action="<?php echo Yii::app()->createUrl('site/save'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
             <div class="sign-up-progress div-clear fl">
                 <div class="form-step form-step-1 div-inline fl">
                     <div class="inner-wrapper">
@@ -19,7 +18,7 @@
                                 <p>CouponDoors is distributed to select neighborhoods in New York every season.</p>
                                 <label class="div-clear">
                                     <span>Enter your zip codes (Ex: 90210 90211 90212)</span>
-                                    <input type="text" name="Orders[zipcode]" id="zip-selected" value="" placeholder="Zipcode(s)">
+                                    <input type="text" name="zipcode" id="zip-selected" value="" placeholder="Zipcode(s)">
                                 </label>
                                 <ul class="list-check">
                                     <li>
@@ -105,19 +104,19 @@
                                 <p>CouponDoors is distributed every season, four times a year.</p>
                                 <ul class="list-seasons">
                                     <li>
-                                        <input type="checkbox" class="custome-check" name="Orders[season][]" value="spring" checked>
+                                        <input type="checkbox" class="custome-check" name="season[]" value="spring" checked>
                                         Spring
                                     </li>
                                     <li>
-                                        <input type="checkbox" class="custome-check" name="Orders[season][]" value="summer">
+                                        <input type="checkbox" class="custome-check" name="season[]" value="summer">
                                         Summer
                                     </li>
                                     <li>
-                                        <input type="checkbox" class="custome-check" name="Orders[season][]" value="fall">
+                                        <input type="checkbox" class="custome-check" name="season[]" value="fall">
                                         Fall
                                     </li>
                                     <li>
-                                        <input type="checkbox" class="custome-check" name="Orders[season][]" value="winter">
+                                        <input type="checkbox" class="custome-check" name="season[]" value="winter">
                                         Winter
                                     </li>
                                 </ul>
@@ -135,71 +134,71 @@
                     <div class="inner-wrapper">
                         <h2 class="page-title div-clear fl"><span class="sprited title-design">Design</span></h2>
                         <div class="div-clear fl main-page">
-                            <?php if (!empty($businessTypes)): ?>
-                                <div class="div-clear fl">
-                                    <div class="selecttype" status="close">
-                                        <div class="placeholder">Select Business Type</div>
-                                        <a href="" title="" status="close" class="select-arrow sprited"></a>
-                                        <ul>
-                                            <?php foreach ($businessTypes as $id => $name): ?>
-                                                <li value="<?php echo $id; ?>"><span><?php echo CHtml::encode($name); ?></span></li>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                        <input type="hidden" name="Customers[business_type_id]" value="">
-                                    </div>
+                            <?php if(!empty($businessTypes)): ?>
+                            <div class="div-clear fl">
+                                <div class="selecttype" status="close">
+                                    <div class="placeholder">Select Business Type</div>
+                                    <a href="" title="" status="close" class="select-arrow sprited"></a>
+                                    <ul>
+                                        <?php foreach($businessTypes as $id => $name): ?>
+                                        <li value="<?php echo $id; ?>"><span><?php echo CHtml::encode($name); ?></span></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                    <input type="hidden" name="business_type" value="">
                                 </div>
-                                <div class="business-slide div-clear fl">
-                                    <div class="show-cat-image" type="1" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
-                                    <div class="show-cat-image" type="2" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
-                                    <div class="show-cat-image" type="3" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
+                            </div>
+                            <div class="business-slide div-clear fl">
+                                <div class="show-cat-image" type="1" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
                                 </div>
+                                <div class="show-cat-image" type="2" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
+                                </div>
+                                <div class="show-cat-image" type="3" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
+                                    <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
+                                </div>
+                            </div>
                             <?php endif; ?>
                             <div class="div-clear business-form fl">
                                 <div class="haft-page div-inline fl">
                                     <ul>
-                                        <li><input type="text" name="Customers[business_name]" value="" placeholder="Name of Business"></li>
-                                        <li><input type="text" name="Customers[contact_person]" value="" placeholder="Contact Person"></li>
-                                        <li><input type="text" name="Customers[address]" value="" placeholder="Address"></li>
-                                        <li><input type="text" name="Customers[email]" value="" placeholder="Email"></li>
-                                        <li><input type="text" name="Customers[website]" value="" placeholder="Website"></li>
+                                        <li><input type="text" name="business_name" value="" placeholder="Name of Business"></li>
+                                        <li><input type="text" name="contact_person" value="" placeholder="Contact Person"></li>
+                                        <li><input type="text" name="address" value="" placeholder="Address"></li>
+                                        <li><input type="text" name="email" value="" placeholder="Email"></li>
+                                        <li><input type="text" name="website" value="" placeholder="Website"></li>
                                         <li>
-                                            <span class="div-inline fl haft-four"><input type="text" name="Customers[phone]" value="" placeholder="Phone"></span>
-                                            <span class="div-inline fr haft-four"><input type="text" name="Customers[mobile]" value="" placeholder="Mobile"></span>
+                                            <span class="div-inline fl haft-four"><input type="text" name="phone" value="" placeholder="Phone"></span>
+                                            <span class="div-inline fr haft-four"><input type="text" name="mobile" value="" placeholder="Mobile"></span>
                                         </li>
-                                        <li><input type="text" name="Customers[sale_agent]" value="" placeholder="Sales Agent"></li>
+                                        <li><input type="text" name="sale_agent" value="" placeholder="Sales Agent"></li>
                                     </ul>
                                 </div>
                                 <div class="haft-page div-inline fr">
                                     <ul>
                                         <li class="upload">
-                                            <input type="text" name="" class="input-select" inputtype="logo" placeholder="Upload Logo" disabled="disabled">
+                                            <input type="text" name="uploaded_logo" class="input-select" inputtype="logo" placeholder="Upload Logo" disabled="disabled">
                                             <div class="browse sprited" inputtype="logo" title=""></div>
-                                            <input type="file" class="typefile" name="logo" value="">
+                                            <input type="file" class="typefile" name="uploaded_logo" value="">
                                             <a href="" class="capture sprited" title=""></a>
                                         </li>
                                         <li class="upload">
-                                            <input type="text" name="" class="input-select" inputtype="images[]" placeholder="Upload images" disabled="disabled">
+                                            <input type="text" name="uploaded_images" class="input-select" inputtype="images[]" placeholder="Upload images" disabled="disabled">
                                             <div class="browse sprited" inputtype="images[]" title=""></div>
-                                            <input type="file" class="typefile" name="images[]" multiple value="">
+                                            <input type="file" class="typefile" name="uploaded_images[]" multiple value="">
                                             <a href="" class="capture sprited" title=""></a>
                                         </li>
-                                        <li><input type="text" name="Customers[headlines]" value="" placeholder="Do you have any Headlines ?"></li>
-                                        <li><input type="text" name="Customers[coupon_deal]" value="" placeholder="What is your coupon deal ?"></li>
-                                        <li><input type="text" name="Customers[disclaimers]" value="" placeholder="Do you have any disclaimers ?"></li>
-                                        <li><input type="text" name="Customers[addition_info_1]" value="" placeholder="Any additional info to include on coupon ?"></li>
-                                        <li><input type="text" name="Customers[addition_info_2]" value="" placeholder="Any additional info to include on coupon ?"></li>
+                                        <li><input type="text" name="headlines" value="" placeholder="Do you have any Headlines ?"></li>
+                                        <li><input type="text" name="coupon_deal" value="" placeholder="What is your coupon deal ?"></li>
+                                        <li><input type="text" name="disclaimers" value="" placeholder="Do you have any disclaimers ?"></li>
+                                        <li><input type="text" name="addition_info_1" value="" placeholder="Any additional info to include on coupon ?"></li>
+                                        <li><input type="text" name="addition_info_2" value="" placeholder="Any additional info to include on coupon ?"></li>
                                     </ul>
                                 </div>
                             </div>

@@ -26,16 +26,6 @@
 class Customers extends CActiveRecord
 {
 	/**
-	 * Returns the static model of the specified AR class.
-	 * @param string $className active record class name.
-	 * @return Customers the static model class
-	 */
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
-
-	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -54,12 +44,12 @@ class Customers extends CActiveRecord
 			array('business_name, business_type, contact_person, address, email, website, phone, mobile, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2, signup_date, uploaded_logo, uploaded_images', 'required'),
 			array('business_type, signup_date', 'numerical', 'integerOnly'=>true),
 			array('business_name, email', 'length', 'max'=>200),
-			array('contact_person, sale_agent, headlines, coupon_deal, disclaimers', 'length', 'max'=>250),
-			array('address, addition_info_1, addition_info_2, uploaded_logo', 'length', 'max'=>255),
+			array('contact_person, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2', 'length', 'max'=>250),
+			array('address, uploaded_logo', 'length', 'max'=>255),
 			array('website', 'length', 'max'=>150),
 			array('phone, mobile', 'length', 'max'=>20),
 			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
+			// @todo Please remove those attributes that should not be searched.
 			array('customer_id, business_name, business_type, contact_person, address, email, website, phone, mobile, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2, signup_date, uploaded_logo, uploaded_images', 'safe', 'on'=>'search'),
 		);
 	}
@@ -104,12 +94,19 @@ class Customers extends CActiveRecord
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 *
+	 * Typical usecase:
+	 * - Initialize the model fields with values from filter form.
+	 * - Execute this method to get CActiveDataProvider instance which will filter
+	 * models according to data in model fields.
+	 * - Pass data provider to CGridView, CListView or any similar widget.
+	 *
+	 * @return CActiveDataProvider the data provider that can return the models
+	 * based on the search/filter conditions.
 	 */
 	public function search()
 	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
+		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
 
@@ -135,5 +132,16 @@ class Customers extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * Please note that you should have this exact method in all your CActiveRecord descendants!
+	 * @param string $className active record class name.
+	 * @return Customers the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
 	}
 }

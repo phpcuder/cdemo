@@ -10897,3 +10897,187 @@ Stack trace:
 REQUEST_URI=/site/login
 HTTP_REFERER=http://project1.com/site/login
 ---
+2014/06/03 04:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign-up".' in D:\www\project1\cdemo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(270): CController->missingAction('sign-up')
+#1 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('sign-up')
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('site/sign-up')
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/sign-up
+HTTP_REFERER=http://project1.com/site/index
+---
+2014/06/03 09:49:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'project1'' in D:\www\project1\cdemo\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\project1\cdemo\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\project1\cdemo\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\project1\cdemo\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Orders))
+#7 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\www\project1\cdemo\protected\controllers\OrdersController.php(136): CActiveRecord->__construct('search')
+#9 D:\www\project1\cdemo\framework\web\actions\CInlineAction.php(49): OrdersController->actionAdmin()
+#10 D:\www\project1\cdemo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\www\project1\cdemo\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\www\project1\cdemo\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\www\project1\cdemo\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\www\project1\cdemo\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\www\project1\cdemo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('orders/admin')
+#20 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/orders/admin
+---
+2014/06/03 09:49:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'project1'' in D:\www\project1\cdemo\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\project1\cdemo\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\project1\cdemo\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\project1\cdemo\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Orders))
+#7 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\www\project1\cdemo\protected\controllers\OrdersController.php(136): CActiveRecord->__construct('search')
+#9 D:\www\project1\cdemo\framework\web\actions\CInlineAction.php(49): OrdersController->actionAdmin()
+#10 D:\www\project1\cdemo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\www\project1\cdemo\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\www\project1\cdemo\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\www\project1\cdemo\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\www\project1\cdemo\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\www\project1\cdemo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('orders/admin')
+#20 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/orders/admin
+---
+2014/06/03 10:20:50 [error] [exception.CException] exception 'CException' with message 'Property "Customers.uploaded_logo" is not defined.' in D:\www\project1\cdemo\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\www\project1\cdemo\framework\db\ar\CActiveRecord.php(145): CComponent->__get('uploaded_logo')
+#1 D:\www\project1\cdemo\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('uploaded_logo')
+#2 D:\www\project1\cdemo\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Customers), 'uploaded_logo')
+#3 D:\www\project1\cdemo\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Customers), 'uploaded_logo', Array)
+#4 D:\www\project1\cdemo\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Customers), 'uploaded_logo', Array)
+#5 D:\www\project1\cdemo\themes\classic\views\customers\_search.php(96): CActiveForm->textField(Object(Customers), 'uploaded_logo', Array)
+#6 D:\www\project1\cdemo\framework\web\CBaseController.php(126): require('D:\www\project1...')
+#7 D:\www\project1\cdemo\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\project1...', Array, true)
+#8 D:\www\project1\cdemo\framework\web\CController.php(869): CBaseController->renderFile('D:\www\project1...', Array, true)
+#9 D:\www\project1\cdemo\themes\classic\views\customers\admin.php(40): CController->renderPartial('_search', Array)
+#10 D:\www\project1\cdemo\framework\web\CBaseController.php(126): require('D:\www\project1...')
+#11 D:\www\project1\cdemo\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\project1...', Array, true)
+#12 D:\www\project1\cdemo\framework\web\CController.php(869): CBaseController->renderFile('D:\www\project1...', Array, true)
+#13 D:\www\project1\cdemo\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 D:\www\project1\cdemo\protected\controllers\CustomersController.php(143): CController->render('admin', Array)
+#15 D:\www\project1\cdemo\framework\web\actions\CInlineAction.php(49): CustomersController->actionAdmin()
+#16 D:\www\project1\cdemo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 D:\www\project1\cdemo\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\www\project1\cdemo\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 D:\www\project1\cdemo\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\www\project1\cdemo\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\www\project1\cdemo\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\www\project1\cdemo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('customers/admin')
+#26 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/customers/admin
+---
+2014/06/03 10:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "orders".' in D:\www\project1\cdemo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(270): CController->missingAction('orders')
+#1 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('orders')
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('customers/order...')
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/customers/orders/admin
+HTTP_REFERER=http://project1.com/customers/admin
+---
+2014/06/03 11:06:41 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.theme" is not defined.' in D:\www\project1\cdemo\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\project1\cdemo\protected\controllers\SiteController.php(9): CComponent->__set('theme', '')
+#1 D:\www\project1\cdemo\framework\web\CController.php(306): SiteController->beforeAction(Object(CInlineAction))
+#2 D:\www\project1\cdemo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\www\project1\cdemo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('')
+#5 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#6 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/03 11:13:02 [error] [php] array_key_exists() expects parameter 2 to be array, boolean given (D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php:916)
+Stack trace:
+#0 D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php(866): Bootstrap->tryGetOptionsForPlugin()
+#1 D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php(817): Bootstrap->registerPlugin()
+#2 D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php(339): Bootstrap->registerPopover()
+#3 D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php(244): Bootstrap->registerJsPackagesIfEnabled()
+#4 D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php(206): Bootstrap->includeAssets()
+#5 D:\www\project1\cdemo\framework\base\CModule.php(387): Bootstrap->init()
+#6 D:\www\project1\cdemo\framework\base\CModule.php(523): CWebApplication->getComponent()
+#7 D:\www\project1\cdemo\framework\base\CApplication.php(163): CWebApplication->preloadComponents()
+#8 D:\www\project1\cdemo\framework\YiiBase.php(125): CWebApplication->__construct()
+#9 D:\www\project1\cdemo\framework\YiiBase.php(98): createApplication()
+#10 D:\www\project1\cdemo\index.php(13): createWebApplication()
+REQUEST_URI=/site/sign-up
+in D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php (916)
+in D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php (904)
+in D:\www\project1\cdemo\protected\extensions\booster\components\Bootstrap.php (866)
+2014/06/03 11:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in D:\www\project1\cdemo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(270): CController->missingAction('view')
+#1 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('view')
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/03 11:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in D:\www\project1\cdemo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(270): CController->missingAction('view')
+#1 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): CController->run('view')
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/03 11:24:03 [error] [php] Undefined index: logo (D:\www\project1\cdemo\protected\controllers\SiteController.php:53)
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\www\project1\cdemo\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\project1\cdemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/save
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (53)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/03 12:40:12 [error] [php] Undefined index: form_step (D:\www\project1\cdemo\protected\controllers\SiteController.php:46)
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\www\project1\cdemo\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\project1\cdemo\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\project1\cdemo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\project1\cdemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/sign-up
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (46)
+in D:\www\project1\cdemo\index.php (13)

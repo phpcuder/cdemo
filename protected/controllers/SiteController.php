@@ -2,6 +2,11 @@
 
 class SiteController extends Controller
 {
+    protected function beforeAction($action) {
+        $this->layout = 'main';
+
+        return parent::beforeAction($action);
+    }
 
     /**
      * Declares class-based actions.
@@ -35,9 +40,27 @@ class SiteController extends Controller
     }
 
     public function actionSignUp() {
-        $this->render('sign_up');
+        $formStep = 1;
+        if(Yii::app()->request->isPostRequest) {
+            $postData = $_POST;
+            $this->pr($postData);
+            $this->pr($_FILES);
+            $this->_handleSaveData($postData);
+        }
+        
+        $businessTypes = CHtml::listData(BusinessTypes::model()->findAll(), 'business_type_id', 'name');
+        
+        $this->render('sign_up', array(
+            'businessTypes' => $businessTypes,
+            'formStep' => $formStep,
+        ));
     }
-    
+
+    private function _handleSaveData($postData, $fileData = null) {
+        
+    }
+
+
     /**
      * This is the action to handle external exceptions.
      */

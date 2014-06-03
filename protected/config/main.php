@@ -44,6 +44,7 @@ return array(
         'urlManager' => array(
             'urlFormat' => 'path',
             'rules' => array(
+                'site/sign-up' => 'site/signUp',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
@@ -83,11 +84,6 @@ return array(
         ),
         'bootstrap' => array(
             'class' => 'application.extensions.booster.components.Bootstrap',
-            'plugins' => array(
-                'popover' => array(
-                    'options' => array(
-                        'html' => 'true'
-                ))),
         ),
     ),
     // application-level parameters that can be accessed
