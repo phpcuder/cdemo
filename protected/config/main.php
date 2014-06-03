@@ -13,6 +13,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+		'application.libs.service.*',
         'application.components.widgets.*',
     ),
     'theme' => 'classic',
@@ -35,6 +36,8 @@ return array(
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
+			'class' => 'WebUser',
+            'autoUpdateFlash' => TRUE,
         ),
         // uncomment the following to enable URLs in path-format
 
