@@ -18,4 +18,4 @@ $this->menu=array(
 
 <h1>Update BusinessTypes <?php echo $model->business_type_id; ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model, 'images' => isset($images) ? $images : array())); ?>

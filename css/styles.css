@@ -1,0 +1,15 @@
+form ul.list-images {
+    list-style: none;
+    clear: both;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+form ul.list-images li {
+    display: inline-block;
+    float: left;
+}
+form ul.list-images li img {
+    margin: 2px;
+    width: 100px;
+    height: 70px;
+}

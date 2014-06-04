@@ -9,6 +9,9 @@
 <div class="inner-wrapper wrap-payment">
     <div class="the-show div-clear fl">
         <form action="<?php echo Yii::app()->createUrl('site/saveSignUp'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
+            <input type="hidden" name="Orders[order_id]" id="orders_order_id" value="" />
+            <input type="hidden" name="Customers[customer_id]" id="customers_customer_id" value="" />
+
             <div class="sign-up-progress div-clear fl">
                 <div class="form-step form-step-1 div-inline fl">
                     <div class="inner-wrapper">
@@ -148,21 +151,14 @@
                                     </div>
                                 </div>
                                 <div class="business-slide div-clear fl">
-                                    <div class="show-cat-image" type="1" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
-                                    <div class="show-cat-image" type="2" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
-                                    <div class="show-cat-image" type="3" style="display:none;" shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat1.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat2.png" width="357" height="245" alt=""></a>
-                                        <a href="" title="" class=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cats/cat3.png" width="357" height="245" alt=""></a>
-                                    </div>
+                                    <?php $first = true; ?>
+                                    <?php foreach ($businessTypeImages as $type => $images): ?>
+                                        <div class="show-cat-image" type="<?php echo $type; ?>" <?php echo $first ? '' : 'style="display:none;"'; ?> shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+                                            <?php foreach ($images as $src): ?>
+                                                <a href="" title="" class=""><img src="<?php echo Yii::app()->baseUrl . '/' . $src; ?>" width="357" height="245" alt=""></a>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </div>
                             <?php endif; ?>
                             <div class="div-clear business-form fl">

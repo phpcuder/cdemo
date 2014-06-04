@@ -230,8 +230,10 @@ $(function(){
                     data: formData,//$('#submit-form').serialize(),data),
                     processData: false,
                     contentType: false,
-                    success: function(data, textStatus, jqXHR){
-                        console.log(textStatus);
+                    success: function(returnData){
+                        var data = $.parseJSON(returnData);
+                        $('#orders_order_id').val(data.order_id);
+                        $('#customers_customer_id').val(data.customer_id);
                     }
                 });
             }
