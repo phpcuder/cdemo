@@ -39,14 +39,14 @@ class Customers extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('business_name, business_type_id, contact_person, address, email, website, phone, mobile, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2, signup_date', 'required'),
+            array('business_name, business_type_id, contact_person, address, email, signup_date', 'required'),
             array('business_type_id, signup_date', 'numerical', 'integerOnly' => true),
             array('business_name, email', 'length', 'max' => 200),
             array('contact_person, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2', 'length', 'max' => 250),
             array('address, uploaded_logo', 'length', 'max' => 255),
             array('website', 'length', 'max' => 150),
             array('phone, mobile', 'length', 'max' => 20),
-            array('uploaded_logo, uploaded_images', 'safe'),
+            array('headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2, phone, mobile, sale_agent, website, uploaded_logo, uploaded_images', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('customer_id, business_name, business_type_id, contact_person, address, email, website, phone, mobile, sale_agent, headlines, coupon_deal, disclaimers, addition_info_1, addition_info_2, signup_date, uploaded_logo, uploaded_images', 'safe', 'on' => 'search'),

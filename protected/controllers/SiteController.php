@@ -1,6 +1,7 @@
 <?php
 
-class SiteController extends Controller {
+class SiteController extends Controller
+{
 
     protected function beforeAction($action) {
         $this->layout = 'main';
@@ -41,9 +42,11 @@ class SiteController extends Controller {
         $fileData = array();
 
         $businessTypes = CHtml::listData(BusinessTypes::model()->findAll(), 'business_type_id', 'name');
+        $businessTypeImages = BusinessTypes::model()->getAllImages();
 
         $this->render('sign_up', array(
             'businessTypes' => $businessTypes,
+            'businessTypeImages' => $businessTypeImages,
         ));
     }
 
@@ -53,7 +56,10 @@ class SiteController extends Controller {
         $customerModel->signup_date = time();
 
         if ($customerModel->save()) {
-            $this->_saveCustomerUploadImages($images);
+            $uploadedFile = $this->_saveCustomerUploadImages($customerModel->customer_id, $images);
+            $customerModel->uploaded_logo = $uploadedFile['logo'];
+            $customerModel->uploaded_images = serialize($uploadedFile['images']);
+            $customerModel->update(false);
 
             return $customerModel;
         }
@@ -61,8 +67,32 @@ class SiteController extends Controller {
         return false;
     }
 
-    private function _saveCustomerUploadImages($images) {
-        
+    private function _saveCustomerUploadImages($cid, $images) {
+        $uploadHelper = new UploadFile;
+        $result = array(
+            'logo' => '',
+            'images' => '',
+        );
+
+        if (isset($images['logo'])) {
+            $imageLogo['logo'] = $images['logo'];
+            unset($images['logo']);
+            $logo = $uploadHelper->upload('upload/customers/' . $cid . '/logo/', $imageLogo);
+
+            if (empty($logo['error'])) {
+                $result['logo'] = $logo['uploaded_file']['logo'];
+            }
+        }
+
+        if (!empty($images)) {
+            $uploadedImages = $uploadHelper->upload('upload/customers/' . $cid . '/images/', $images['images']);
+
+            if (empty($uploadedImages['error'])) {
+                $result['images'] = $uploadedImages['uploaded_file'];
+            }
+        }
+
+        return $result;
     }
 
     private function _saveOrder($customer, $postData) {
@@ -80,7 +110,7 @@ class SiteController extends Controller {
 
         $zipcodeArray = explode(' ', $postData['Orders']['zipcode']);
         $qty = count($zipcodeArray) + count($postData['Orders']['season']);
-        $price = $postData['price'];
+        $price = isset($postData['price']) ? $postData['price'] : 295;
 
         return array(
             'customer_id' => $customer->customer_id,
@@ -89,7 +119,7 @@ class SiteController extends Controller {
             'size' => Yii::app()->params['price_size_value'][$price],
             'qty' => $qty,
             'total' => $qty * $price,
-            'season' => implode(' ', $postData['Orders']['season']),
+            'season' => implode(' ', array_unique($postData['Orders']['season'])),
             'order_date' => time(),
         );
     }
@@ -97,7 +127,6 @@ class SiteController extends Controller {
     public function actionSaveSignUp() {
         if (Yii::app()->request->isPostRequest) {
             $postData = $_POST;
-            $this->pr($postData);
 
             if (isset($_FILES['logo'])) {
                 $fileData['logo'] = $_FILES['logo'];
@@ -114,10 +143,11 @@ class SiteController extends Controller {
                                 'success' => 200,
                                 'data' => array(
                                     'order_id' => $order->order_id,
-                                    'invoice_date' => date('d/m/Y', $order->order_date),
+                                    'customer_id' => $order->customer_id,
+                                    'order_date' => date('d/m/Y', $order->order_date),
                                     'total' => number_format($order->total, 2),
                                     'qty' => $order->qty,
-                                    'price' => $priceValue[$order->size],
+                                    'price' => number_format($priceValue[$order->size], 2),
                                     'size' => $order->size,
                                     'customer_address' => $customer->address,
                                 ),
@@ -126,9 +156,7 @@ class SiteController extends Controller {
             }
         }
 
-        exit(json_encode(array(
-                    'success' => 400,
-                )));
+        exit(json_encode(array('success' => 400)));
     }
 
     /**

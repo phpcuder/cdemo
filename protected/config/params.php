@@ -21,4 +21,5 @@ return array(
         'fall' => 'Fall',
         'winter' => 'Winter',
     ),
+    'max_file_size' => '2048000',
 );
