@@ -44,6 +44,7 @@ return array(
         'urlManager' => array(
             'urlFormat' => 'path',
             'rules' => array(
+                'site/save-sign-up' => 'site/saveSignUp',
                 'site/sign-up' => 'site/signUp',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',

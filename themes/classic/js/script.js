@@ -217,6 +217,12 @@ $(function(){
             }
         }else if(step == 4 && nav == 1) {
             if(error == 0){
+                var postData = $('#submit-form').serializeArray();
+
+                $.each(postData, function(key, value)
+                {
+                    formData.append(value.name, value.value);
+                });
 
                 $.ajax({
                     url: $('#submit-form').attr('action'),
@@ -296,7 +302,7 @@ $(function(){
                 var sl_txt = $(this).find('span').html(),
                 sl_val = $(this).attr('value');
                 $('.selecttype .placeholder').html(sl_txt);
-                $('input[name="business_type"]').val(sl_val);
+                $('input[name="Customers[business_type_id]"]').val(sl_val);
                 $this.attr('status', 'close');
                 $('.selecttype ul').slideUp(120);
                 $('.show-cat-image').hide();
@@ -316,17 +322,26 @@ $(function(){
     $('.show-cat-image').loopslider();
  
     // Add events
-    $('input[type=file]').on('change', prepareUpload);
+    $('input[type=file][name=logo]').on('change', prepareUploadLogo);
+    $('input[type=file][name^="images"]').on('change', prepareUploadImages);
  
     // Grab the files and set them to our variable
-    function prepareUpload(event)
+    function prepareUploadLogo(event)
     {
         files = event.target.files;
 
         $.each(files, function(key, value)
         {
-            formData.append(key, value);
+            formData.append('logo', value);
         });
     }
 
+    function prepareUploadImages(event)
+    {
+        files = event.target.files;
+        $.each(files, function(key, value)
+        {
+            formData.append(key, value);
+        });
+    }
 });

@@ -3,9 +3,13 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-    'price_size_label' => array(
-        '295' => 'Small',
-        '595' => 'Large',
+    'size_label' => array(
+        1 => '3.0" H x 4.0" W',
+        2 => '6.0" H x 4.0" W',
+    ),
+    'admin_size_label' => array(
+        1 => 'Small',
+        2 => 'Large',
     ),
     'price_size_value' => array(
         '295' => 1,

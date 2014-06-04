@@ -34,6 +34,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'qty'); ?>
+		<?php echo $form->textField($model,'qty',array('size'=>11,'maxlength'=>11)); ?>
+		<?php echo $form->error($model,'qty'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'total'); ?>
+		<?php echo $form->textField($model,'total'); ?>
+		<?php echo $form->error($model,'total'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'zipcode'); ?>
 		<?php echo $form->textField($model,'zipcode',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'zipcode'); ?>

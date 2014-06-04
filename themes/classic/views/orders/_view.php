@@ -21,10 +21,19 @@
 	<?php echo CHtml::encode($data->size); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('qty')); ?>:</b>
+	<?php echo CHtml::encode($data->qty); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('total')); ?>:</b>
+	<?php echo CHtml::encode($data->total); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('zipcode')); ?>:</b>
 	<?php echo CHtml::encode($data->zipcode); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('season')); ?>:</b>
 	<?php echo CHtml::encode($data->season); ?>
 	<br />
@@ -33,7 +42,6 @@
 	<?php echo CHtml::encode($data->status); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('order_date')); ?>:</b>
 	<?php echo CHtml::encode($data->order_date); ?>
 	<br />

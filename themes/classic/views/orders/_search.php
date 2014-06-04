@@ -32,6 +32,16 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'qty'); ?>
+		<?php echo $form->textField($model,'qty',array('size'=>11,'maxlength'=>11)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'total'); ?>
+		<?php echo $form->textField($model,'total'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'zipcode'); ?>
 		<?php echo $form->textField($model,'zipcode',array('size'=>60,'maxlength'=>255)); ?>
 	</div>

@@ -8,8 +8,7 @@
 
 <div class="inner-wrapper wrap-payment">
     <div class="the-show div-clear fl">
-        <form action="<?php echo Yii::app()->createUrl('site/signUp'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
-            <input type="hidden" name="form_step" value="<?php echo $formStep; ?>" />
+        <form action="<?php echo Yii::app()->createUrl('site/saveSignUp'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
             <div class="sign-up-progress div-clear fl">
                 <div class="form-step form-step-1 div-inline fl">
                     <div class="inner-wrapper">
@@ -214,17 +213,17 @@
                         <div class="invoice-block">
                             <h4>INVOICE</h4>
                             <ul>
-                                <li><strong>Invoice # :</strong> 4954</li>
-                                <li><strong>Invoice Date :</strong> 01/02/2014</li>
-                                <li><strong>Total Due :</strong> $345.00</li>
+                                <li><strong>Invoice # :</strong> <span id="invoice_id">4954</span></li>
+                                <li><strong>Invoice Date :</strong> <span id="invoice_date">01/02/2014</span></li>
+                                <li><strong>Total Due :</strong> <span id="order_price">$345.00</span></li>
                                 <li><strong>Due Date :</strong> On Receipt</li>
                             </ul>
                         </div>
-                        <ul class="custome-block">
-                            <li>Royal Optix</li>
-                            <li>7516 3rd Ave</li>
-                            <li>Brooklyn NY 11209</li>
-                        </ul>
+                        <div class="custome-block">
+                            Royal Optix
+                            7516 3rd Ave
+                            Brooklyn NY 11209
+                        </div>
                         <table class="table-title">
                             <tr>
                                 <th>QTY</th>

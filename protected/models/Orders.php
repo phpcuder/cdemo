@@ -8,6 +8,8 @@
  * @property string $customer_id
  * @property string $contact_person
  * @property integer $size
+ * @property string $qty
+ * @property double $total
  * @property string $zipcode
  * @property string $season
  * @property integer $status
@@ -43,13 +45,15 @@ class Orders extends CActiveRecord
 		return array(
 			array('customer_id, contact_person, size, zipcode, season, order_date', 'required'),
 			array('size, status', 'numerical', 'integerOnly'=>true),
+			array('total', 'numerical'),
 			array('customer_id, order_date', 'length', 'max'=>10),
 			array('contact_person', 'length', 'max'=>250),
+			array('qty', 'length', 'max'=>11),
 			array('zipcode', 'length', 'max'=>255),
 			array('season', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('order_id, customer_id, contact_person, size, zipcode, season, status, order_date', 'safe', 'on'=>'search'),
+			array('order_id, customer_id, contact_person, size, qty, total, zipcode, season, status, order_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,6 +65,7 @@ class Orders extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'customer' => array(self::BELONGS_TO, 'Customers', 'customer_id'),
 		);
 	}
 
@@ -74,6 +79,8 @@ class Orders extends CActiveRecord
 			'customer_id' => 'Customer',
 			'contact_person' => 'Contact Person',
 			'size' => 'Size',
+			'qty' => 'Qty',
+			'total' => 'Total',
 			'zipcode' => 'Zipcode',
 			'season' => 'Season',
 			'status' => 'Status',
@@ -96,6 +103,8 @@ class Orders extends CActiveRecord
 		$criteria->compare('customer_id',$this->customer_id,true);
 		$criteria->compare('contact_person',$this->contact_person,true);
 		$criteria->compare('size',$this->size);
+		$criteria->compare('qty',$this->qty,true);
+		$criteria->compare('total',$this->total);
 		$criteria->compare('zipcode',$this->zipcode,true);
 		$criteria->compare('season',$this->season,true);
 		$criteria->compare('status',$this->status);

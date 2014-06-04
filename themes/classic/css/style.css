@@ -154,7 +154,7 @@ input:focus, textarea:focus, select:focus{outline:none;}
 .invoice-block{display:inline-block;width:172px;position:absolute;left:380px;font-size:13px;top:108px;}
 .invoice-block h4{text-transform:uppercase;font-size:25px;}
 .invoice-block ul{list-style:none;}
-.custome-block{list-style:none;position:absolute;top:231px;left:93px;font-size:13px;}
+.custome-block{list-style:none;position:absolute;top:231px;left:93px;font-size:13px;width:115px;}
 .table-title{position:absolute;top:323px;left:93px;width:456px;font-size:14px;}
 .table-title th{padding:3px 0;text-align:left;}
 .table-title td{padding:7px 0;}

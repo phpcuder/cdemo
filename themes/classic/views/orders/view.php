@@ -25,6 +25,8 @@ $this->menu=array(
 		'customer_id',
 		'contact_person',
 		'size',
+		'qty',
+		'total',
 		'zipcode',
 		'season',
 		'status',

@@ -35,9 +35,9 @@
         <div class="footer-menu div-clear fl">
             <ul>
                 <li><a href="/" title="Home">Home</a></li>
-                <li><a href="maps.html" title="Maps">Maps</a></li>
-                <li><a href="prices.html" title="Prices">Prices</a></li>
-                <li><a href="calender.html" title="Calender">Calender</a></li>
+                <li><a href="<?php echo Yii::app()->createUrl('site/maps'); ?>" title="Maps">Maps</a></li>
+                <li><a href="<?php echo Yii::app()->createUrl('site/prices'); ?>" title="Prices">Prices</a></li>
+                <li><a href="<?php echo Yii::app()->createUrl('site/calender'); ?>" title="Calender">Calender</a></li>
                 <li><a href="<?php echo Yii::app()->createUrl('site/contact'); ?>" title="Contact">Contact</a></li>
             </ul>
         </div>
