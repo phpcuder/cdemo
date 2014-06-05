@@ -14577,3 +14577,7 @@ REQUEST_URI=/businessTypes/update/1
 in D:\www\project1\cdemo\protected\controllers\BusinessTypesController.php (134)
 in D:\www\project1\cdemo\protected\controllers\BusinessTypesController.php (113)
 in D:\www\project1\cdemo\protected\controllers\BusinessTypesController.php (98)
+2014/06/04 12:42:47 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (55)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (138)
+in D:\www\project1\cdemo\index.php (13)
