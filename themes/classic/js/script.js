@@ -18,23 +18,23 @@ $(function(){
                 if( $('.new-checkbox[type="'+$type+'"][name="'+$name+'"]').length > 0 ){
                     if( $name.indexOf("[") > -1 ){
                         if( $(this).hasClass('input-'+$type+'-check') ){
-                            $(this).removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
+                            $(this).removeClass('input-'+$type+'-check').find('input').prop('checked', false);
                         }else{
-                            $(this).addClass('input-'+$type+'-check').find('input').attr('checked', 'checked');
+                            $(this).addClass('input-'+$type+'-check').find('input').prop('checked', true);
                         }
                     }else{
                         if( $(this).hasClass('input-'+$type+'-check') ){
-                            $(this).removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
+                            $(this).removeClass('input-'+$type+'-check').find('input').prop('checked', false);
                         }else{
-                            $('.new-checkbox[type="'+$type+'"][name="'+$name+'"]:visible').removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
-                            $(this).addClass('input-'+$type+'-check').find('input').attr('checked', 'checked');
+                            $('.new-checkbox[type="'+$type+'"][name="'+$name+'"]:visible').removeClass('input-'+$type+'-check').find('input').prop('checked', false);
+                            $(this).addClass('input-'+$type+'-check').find('input').prop('checked', true);
                         }
                         if( $('.input-'+$type+'-check[type="'+$type+'"][name="'+$name+'"]:visible').length == 0){
                             if( $(this).hasClass('input-'+$type+'-check') ){
-                                $(this).removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
+                                $(this).removeClass('input-'+$type+'-check').find('input').prop('checked', false);
                             }else{
-                                $('.new-checkbox[type="'+$type+'"][name="'+$name+'"]:visible').removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
-                                $(this).addClass('input-'+$type+'-check').find('input').attr('checked', 'checked');
+                                $('.new-checkbox[type="'+$type+'"][name="'+$name+'"]:visible').removeClass('input-'+$type+'-check').find('input').prop('checked', false);
+                                $(this).addClass('input-'+$type+'-check').find('input').prop('checked', true);
                             }
                         }
                     }
@@ -47,9 +47,9 @@ $(function(){
                 }
             }else{
                 if( $(this).hasClass('input-'+$type+'-check') ){
-                    $(this).removeClass('input-'+$type+'-check').find('input').removeAttr('checked');
+                    $(this).removeClass('input-'+$type+'-check').find('input').prop('checked', false);
                 }else{
-                    $(this).addClass('input-'+$type+'-check').find('input').attr('checked', 'checked');
+                    $(this).addClass('input-'+$type+'-check').find('input').prop('checked', true);
                 }
             }
         }
@@ -216,7 +216,6 @@ $(function(){
         }else if(step == 4 && nav == 1) {
             if(error == 0){
                 var postData = $('#submit-form').serializeArray();
-                console.log(postData);
                 var formData = new FormData();
                 
                 var logo = $('input[type=file][name=logo]')[0].files;

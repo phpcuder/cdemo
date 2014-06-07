@@ -4464,3 +4464,1022 @@ Stack trace:
 REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
 HTTP_REFERER=http://project1.com/site/sign-up
 ---
+2014/06/07 19:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:34:35 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:34:49 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:35:04 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:35:26 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:35:39 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:35:52 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:36:01 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:44:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.woff".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.woff
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.ttf
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/ocraext/OCRAExtended.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/ocraext/OCRAExtended.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/opensans/OpenSans.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/opensans/OpenSans.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/css/fonts/arialnarrow/ArialNarrow.svg".' in D:\www\project1\cdemo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\project1\cdemo\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 D:\www\project1\cdemo\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\project1\cdemo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/css/fonts/arialnarrow/ArialNarrow.svg
+HTTP_REFERER=http://project1.com/site/sign-up
+---
+2014/06/07 19:49:26 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:49:38 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:49:55 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:50:06 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:50:49 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:51:15 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:51:56 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:52:15 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:52:31 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:52:45 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:53:03 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:53:17 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:53:27 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:53:40 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:53:52 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:54:08 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:54:19 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:54:44 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:55:03 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:55:15 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:55:30 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:55:41 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:55:53 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:56:06 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
+2014/06/07 19:56:18 [warning] [application] Failed to set unsafe attribute "customer_id" of "Customers".
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (61)
+in D:\www\project1\cdemo\protected\controllers\SiteController.php (151)
+in D:\www\project1\cdemo\index.php (13)
