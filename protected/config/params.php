@@ -22,4 +22,8 @@ return array(
         'winter' => 'Winter',
     ),
     'max_file_size' => '2048000',
+    'payment_status' => array(
+        0 => 'not paid',
+        1 => 'paid',
+    ),
 );

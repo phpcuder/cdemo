@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'business_type'); ?>
-		<?php echo $form->textField($model,'business_type'); ?>
+		<?php echo $form->label($model,'business_type_id'); ?>
+		<?php echo $form->textField($model,'business_type_id'); ?>
 	</div>
 
 	<div class="row">

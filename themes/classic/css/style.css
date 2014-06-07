@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'OpenSans';
-	src: url('fonts/opensans/OpenSans.eot?') format('eot'), 
-	     url('fonts/opensans/OpenSans.woff') format('woff'), 
-	     url('fonts/opensans/OpenSans.ttf')  format('truetype'),
-	     url('fonts/opensans/OpenSans.svg#OpenSans') format('svg');
+    font-family: 'OpenSans';
+    src: url('fonts/opensans/OpenSans.eot?') format('eot'), 
+        url('fonts/opensans/OpenSans.woff') format('woff'), 
+        url('fonts/opensans/OpenSans.ttf')  format('truetype'),
+        url('fonts/opensans/OpenSans.svg#OpenSans') format('svg');
 }
 @font-face {
-	font-family: 'ArialNarrow';
-	src: url('fonts/arialnarrow/ArialNarrow.eot?') format('eot'), 
-	     url('fonts/arialnarrow/ArialNarrow.woff') format('woff'), 
-	     url('fonts/arialnarrow/ArialNarrow.ttf')  format('truetype'),
-	     url('fonts/arialnarrow/ArialNarrow.svg#ArialNarrow') format('svg');
+    font-family: 'ArialNarrow';
+    src: url('fonts/arialnarrow/ArialNarrow.eot?') format('eot'), 
+        url('fonts/arialnarrow/ArialNarrow.woff') format('woff'), 
+        url('fonts/arialnarrow/ArialNarrow.ttf')  format('truetype'),
+        url('fonts/arialnarrow/ArialNarrow.svg#ArialNarrow') format('svg');
 }
 *{margin:0;padding:0;}
 body{font-family:'OpenSans', sans-serif;font-size:21px;min-width:1000px;overflow-x:hidden;color:#fff;background-color:#e80000;display:inline-block;width:100%;float:left;}
@@ -195,3 +195,13 @@ input:focus, textarea:focus, select:focus{outline:none;}
 .td-right{text-align:right;}
 .in-foot{text-align:center;padding:25px 0;font-size:25px;}
 .in-foot h3{font-size:28px;font-weight:normal;}
+/*Login form*/
+form#login-form{width:400px;height:300px;margin:0 auto;margin-top: 100px;}
+form#login-form label{width:80px;display:inline-block;font-size:14px;}
+form#login-form div.row{margin-bottom:5px;}
+form#login-form input[type="text"],form#login-form input[type="password"]{font-size:14px;padding:3px 4px;background:#fff;width:190px;}
+form#login-form input[type="submit"]{font-size:14px;padding:3px 15px;}
+form#login-form p.hint{font-size:12px;}
+form#login-form .rememberMe{padding-left:85px;}
+form#login-form .rememberMe label{width:160px;}
+form#login-form div.buttons{padding-left:85px;}

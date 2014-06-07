@@ -75,8 +75,8 @@ class Orders extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'order_id' => 'Order',
-			'customer_id' => 'Customer',
+			'order_id' => 'Invoice #',
+			'customer_id' => 'Customer #',
 			'contact_person' => 'Contact Person',
 			'size' => 'Size',
 			'qty' => 'Qty',

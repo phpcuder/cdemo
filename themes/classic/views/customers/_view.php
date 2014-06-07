@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->business_name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('business_type')); ?>:</b>
-	<?php echo CHtml::encode($data->business_type); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('business_type_id')); ?>:</b>
+	<?php echo CHtml::encode($data->business_type_id); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('contact_person')); ?>:</b>

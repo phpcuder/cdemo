@@ -23,7 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'customer_id',
 		'business_name',
-		'business_type',
+		'business_type_id',
 		'contact_person',
 		'address',
 		'email',

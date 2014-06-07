@@ -144,7 +144,7 @@
                                         <li value="<?php echo $id; ?>"><span><?php echo CHtml::encode($name); ?></span></li>
                                         <?php endforeach; ?>
                                     </ul>
-                                    <input type="hidden" name="business_type" value="">
+                                    <input type="hidden" name="business_type_id" value="">
                                 </div>
                             </div>
                             <div class="business-slide div-clear fl">

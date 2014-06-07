@@ -264,7 +264,7 @@ $(function(){
 				var sl_txt = $(this).find('span').html(),
 					sl_val = $(this).attr('value');
 				$('.selecttype .placeholder').html(sl_txt);
-				$('input[name="business_type"]').val(sl_val);
+				$('input[name="business_type_id"]').val(sl_val);
 				$this.attr('status', 'close');
 				$('.selecttype ul').slideUp(120);
 				$('.show-cat-image').hide();
