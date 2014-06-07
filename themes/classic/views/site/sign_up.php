@@ -5,7 +5,6 @@
 <?php $cs->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.validationEngine.js'); ?>
 <?php $cs->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.validationEngine-en.js'); ?>
 
-
 <div class="inner-wrapper wrap-payment">
     <div class="the-show div-clear fl">
         <form action="<?php echo Yii::app()->createUrl('site/saveSignUp'); ?>" method="post" enctype="multipart/form-data" id="submit-form">
@@ -147,7 +146,7 @@
                                                 <li value="<?php echo $id; ?>"><span><?php echo CHtml::encode($name); ?></span></li>
                                             <?php endforeach; ?>
                                         </ul>
-                                        <input type="hidden" name="Customers[business_type_id]" value="">
+                                        <input type="hidden" name="Customers[business_type_id]" id="Customers_business_type_id" value="">
                                     </div>
                                 </div>
                                 <div class="business-slide div-clear fl">
@@ -165,10 +164,10 @@
                             <div class="div-clear business-form fl">
                                 <div class="haft-page div-inline fl">
                                     <ul>
-                                        <li><input type="text" name="Customers[business_name]" value="" placeholder="Enter name of Business"></li>
-                                        <li><input type="text" name="Customers[contact_person]" value="" placeholder="Enter contact person"></li>
-                                        <li><input type="text" name="Customers[address]" value="" placeholder="Enter address"></li>
-                                        <li><input type="text" name="Customers[email]" value="" placeholder="Enter email"></li>
+                                        <li><input type="text" name="Customers[business_name]" id="Customers_business_name" class="validate[required]" value="" placeholder="Enter name of Business"></li>
+                                        <li><input type="text" name="Customers[contact_person]" id="Customers_contact_person" value="" placeholder="Enter contact person"></li>
+                                        <li><input type="text" name="Customers[address]" id="Customers_address" value="" placeholder="Enter address"></li>
+                                        <li><input type="text" name="Customers[email]" id="Customers_email" value="" placeholder="Enter email"></li>
                                         <li><input type="text" name="Customers[website]" value="" placeholder="Website"></li>
                                         <li>
                                             <span class="div-inline fl haft-four"><input type="text" name="Customers[phone]" value="" placeholder="Phone"></span>

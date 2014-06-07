@@ -40,11 +40,11 @@
                             array('label' => 'Dashboard', 'url' => '#', 'active' => true),
                             array(
                                 'label' => 'Orders',
-                                'url' => 'orders/admin',
+                                'url' => '/orders/admin',
                             ),
                             array(
                                 'label' => 'Customer',
-                                'url' => 'customers/admin',
+                                'url' => '/customers/admin',
                             ),
                             array('label' => 'Business Types', 'url' => '/businessTypes/admin'),
                         ),
