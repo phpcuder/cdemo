@@ -1,7 +1,4 @@
 $(function(){
-    var files = {};
-    var formData = new FormData();
-
     $.fn.hasAttr = function(name) {  
         return this.attr(name) !== undefined;
     };
@@ -56,6 +53,7 @@ $(function(){
                 }
             }
         }
+
     });
     $('.show-calendar a').click(function(){
         var type = $(this).attr('class');
@@ -218,6 +216,22 @@ $(function(){
         }else if(step == 4 && nav == 1) {
             if(error == 0){
                 var postData = $('#submit-form').serializeArray();
+                console.log(postData);
+                var formData = new FormData();
+                
+                var logo = $('input[type=file][name=logo]')[0].files;
+                
+                $.each(logo, function(key, value)
+                {
+                    formData.append('logo', value);
+                });
+                
+                var images = $('input[type=file][name^="images"]')[0].files;
+                
+                $.each(images, function(key, value)
+                {
+                    formData.append(key, value);
+                });
 
                 $.each(postData, function(key, value)
                 {
@@ -230,10 +244,14 @@ $(function(){
                     data: formData,//$('#submit-form').serialize(),data),
                     processData: false,
                     contentType: false,
-                    success: function(returnData){
-                        var data = $.parseJSON(returnData);
-                        $('#orders_order_id').val(data.order_id);
-                        $('#customers_customer_id').val(data.customer_id);
+                    success: function(data, textStatus, jqXHR){
+                        //var data = $.parseJSON(returnData);
+                        if(textStatus == 'success') {
+                            data = $.parseJSON(data);
+                            $('#orders_order_id').val(data.data.order_id);
+                            $('#customers_customer_id').val(data.data.customer_id);
+                            $('#invoice_info').html(data.invoiceTemplateHtml);
+                        }
                     }
                 });
             }
@@ -322,28 +340,5 @@ $(function(){
     });
     $('.slider').loopslider();
     $('.show-cat-image').loopslider();
- 
-    // Add events
-    $('input[type=file][name=logo]').on('change', prepareUploadLogo);
-    $('input[type=file][name^="images"]').on('change', prepareUploadImages);
- 
-    // Grab the files and set them to our variable
-    function prepareUploadLogo(event)
-    {
-        files = event.target.files;
 
-        $.each(files, function(key, value)
-        {
-            formData.append('logo', value);
-        });
-    }
-
-    function prepareUploadImages(event)
-    {
-        files = event.target.files;
-        $.each(files, function(key, value)
-        {
-            formData.append(key, value);
-        });
-    }
 });

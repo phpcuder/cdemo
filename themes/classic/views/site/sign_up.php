@@ -154,6 +154,7 @@
                                     <?php $first = true; ?>
                                     <?php foreach ($businessTypeImages as $type => $images): ?>
                                         <div class="show-cat-image" type="<?php echo $type; ?>" <?php echo $first ? '' : 'style="display:none;"'; ?> shownavi="0" playloop="2000" thumbsize="13" scrollnav="left" timer="400">
+                                            <?php $first = false; ?>
                                             <?php foreach ($images as $src): ?>
                                                 <a href="" title="" class=""><img src="<?php echo Yii::app()->baseUrl . '/' . $src; ?>" width="357" height="245" alt=""></a>
                                             <?php endforeach; ?>
@@ -164,10 +165,10 @@
                             <div class="div-clear business-form fl">
                                 <div class="haft-page div-inline fl">
                                     <ul>
-                                        <li><input type="text" name="Customers[business_name]" value="" placeholder="Name of Business"></li>
-                                        <li><input type="text" name="Customers[contact_person]" value="" placeholder="Contact Person"></li>
-                                        <li><input type="text" name="Customers[address]" value="" placeholder="Address"></li>
-                                        <li><input type="text" name="Customers[email]" value="" placeholder="Email"></li>
+                                        <li><input type="text" name="Customers[business_name]" value="" placeholder="Enter name of Business"></li>
+                                        <li><input type="text" name="Customers[contact_person]" value="" placeholder="Enter contact person"></li>
+                                        <li><input type="text" name="Customers[address]" value="" placeholder="Enter address"></li>
+                                        <li><input type="text" name="Customers[email]" value="" placeholder="Enter email"></li>
                                         <li><input type="text" name="Customers[website]" value="" placeholder="Website"></li>
                                         <li>
                                             <span class="div-inline fl haft-four"><input type="text" name="Customers[phone]" value="" placeholder="Phone"></span>
@@ -201,7 +202,7 @@
                         </div>
                     </div>
                 </div><!-- /form-step-4 -->
-                <div class="form-step form-step-5 div-inline fl" style="opacity:0;">
+                <div id="invoice_info" class="form-step form-step-5 div-inline fl" style="opacity:0;">
                     <div class="page">
                         <div class="address-block">
                             9 Bellingham Lane Great Neck, NY 11023

@@ -1,7 +1,6 @@
 <?php
 
-class SiteController extends Controller
-{
+class SiteController extends Controller {
 
     protected function beforeAction($action) {
         $this->layout = 'main';
@@ -51,7 +50,14 @@ class SiteController extends Controller
     }
 
     private function _saveCustomer($data, $images) {
-        $customerModel = new Customers;
+        $customerModel = null;
+
+        if (intval($data['customer_id'])) {
+            $customerModel = Customers::model()->findByPk($data['customer_id']);
+        } else {
+            $customerModel = new Customers;
+        }
+
         $customerModel->attributes = $data;
         $customerModel->signup_date = time();
 
@@ -96,7 +102,14 @@ class SiteController extends Controller
     }
 
     private function _saveOrder($customer, $postData) {
-        $orderModel = new Orders;
+        $orderModel = null;
+
+        if (intval($postData['Orders']['order_id'])) {
+            $orderModel = Orders::model()->findByPk($postData['Orders']['order_id']);
+        } else {
+            $orderModel = new Orders;
+        }
+
         $orderModel->attributes = $this->_handleOrderData($customer, $postData);
 
         if ($orderModel->save()) {
@@ -108,8 +121,8 @@ class SiteController extends Controller
 
     private function _handleOrderData($customer, $postData) {
 
-        $zipcodeArray = explode(' ', $postData['Orders']['zipcode']);
-        $qty = count($zipcodeArray) + count($postData['Orders']['season']);
+        $zipcodeArray = explode(' ', trim($postData['Orders']['zipcode']));
+        $qty = count($zipcodeArray) * count(array_unique($postData['Orders']['season']));
         $price = isset($postData['price']) ? $postData['price'] : 295;
 
         return array(
@@ -144,19 +157,27 @@ class SiteController extends Controller
                                 'data' => array(
                                     'order_id' => $order->order_id,
                                     'customer_id' => $order->customer_id,
-                                    'order_date' => date('d/m/Y', $order->order_date),
-                                    'total' => number_format($order->total, 2),
-                                    'qty' => $order->qty,
-                                    'price' => number_format($priceValue[$order->size], 2),
-                                    'size' => $order->size,
-                                    'customer_address' => $customer->address,
                                 ),
+                                'invoiceTemplateHtml' => $this->renderPartial('_invoice', array('invoice' => array(
+                                        'order_id' => $order->order_id,
+                                        'order_date' => date('d/m/Y', $order->order_date),
+                                        'total' => number_format($order->total, 2),
+                                        'qty' => number_format($order->qty, 2),
+                                        'price' => number_format($priceValue[$order->size], 2),
+                                        'size' => $order->size,
+                                        'customer_address' => $customer->address,
+                                        )), true),
                             )));
                 }
             }
         }
 
-        exit(json_encode(array('success' => 400)));
+        exit(json_encode(array('success' => 400, 'data' => array(
+                        'order_id' => '',
+                        'customer_id' => '',
+                    ),
+                    'invoiceTemplateHtml' => '',
+                )));
     }
 
     /**
